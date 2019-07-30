@@ -10,7 +10,7 @@ Feel free to jumpstart your project using this template 🙌
 1. Install [Yarn](https://yarnpkg.com/en/docs/install) 
 1. Run `yarn`
 1. Develop your amazing app 
-1. Run `gulp style` & `gulp minify`
+1. Run `gulp party` 
 1. Deploy & Party 🎉
 
 ## Dead Simple Structure
@@ -39,3 +39,19 @@ Also it is highly encouraged to use only those parts of Bootstrap that you reall
 What's this `shame.scss` you might ask. Well, do you know that time when you just wanted to try something and it become a component all of a sudden? Well, here is a solution to your problem. This file will help you to write your magic code first without needing to think about the structure, name etc. 
 Before pushing, however, make sure you have all your components neatly in components directory and `shame.scss` is empty, otherwise shame on you 😉
 
+### Minification 
+
+> Tools for speedy performance
+
+Tools:
+- HTML
+    - **htmlmin**
+- CSS
+    - **Minify-css**
+- JS  
+    - **Babel**
+    - **Uglify**
+- images (.JPEG, .PNG, .SVG)
+    - **imagemin**
+
+Write your JS as you please. **Babel** will then compile your code to backwards compatible JS so that oldies understand what is going on. **Uglify** will compress your compiled code to achieve desired speed that your users deserve.

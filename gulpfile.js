@@ -12,7 +12,8 @@ const babel = require('gulp-babel');
 // Minification
 const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
-let cleanCSS = require('gulp-clean-css');
+const cleanCSS = require('gulp-clean-css');
+const uglify = require('gulp-uglify');
 
 
 function style(){
@@ -59,7 +60,13 @@ gulp.task('minify-css', () => {
         .pipe(gulp.dest('./app/css'));
 });
 
-gulp.task('party', gulp.series('babel', 'imgMin', 'minify', 'minify-css'));
+gulp.task('compress', function(){
+    return gulp.src('./app/js/index.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('./app/js'))
+});
+
+gulp.task('party', gulp.series('babel', 'imgMin', 'minify', 'minify-css', 'compress'));
 
 exports.style = style;
 exports.watch = watch;
