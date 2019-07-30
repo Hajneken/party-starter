@@ -36,6 +36,6 @@ Also it is highly encouraged to use only those parts of Bootstrap that you reall
 
 #### Shame
 
-What's this `shame.scss` you might ask. Well, do you know that time when you just quickly want to try something and it becomes a component all of a sudden? This file will help you to write your magic code first without needing to think about the structure, name etc. 
+What's this `shame.scss` you might ask. Well, do you know that time when you just wanted to try something and it become a component all of a sudden? Well, here is a solution to your problem. This file will help you to write your magic code first without needing to think about the structure, name etc. 
 Before pushing, however, make sure you have all your components neatly in components directory and `shame.scss` is empty, otherwise shame on you 😉
 
