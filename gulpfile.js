@@ -22,19 +22,6 @@ function style(){
         .pipe(browserSync.stream());
 }
 
-// watch for changes and update automatically
-function watch(){
-    browserSync.init({
-        server: {
-            baseDir: './app'
-        }
-    });
-    gulp.watch('./resources/scss/**/*.scss', style);
-    gulp.watch('./resources/index.html').on('change', browserSync.reload);
-    gulp.watch('./resources/js/*.js').on('change', browserSync.reload);
-}
-
-
 gulp.task("babel", function () {
     return gulp.src("./resources/js/index.js")
         .pipe(babel())
@@ -65,6 +52,19 @@ gulp.task('compress', function(){
         .pipe(uglify())
         .pipe(gulp.dest('./app/js'))
 });
+
+// watch for changes and update automatically
+function watch(){
+    browserSync.init({
+        server: {
+            baseDir: './app'
+        }
+    });
+    gulp.watch('./resources/scss/**/*.scss', style);
+    gulp.watch('./resources/index.html').on('change', gulp.series('minify', 'compress'));
+    gulp.watch('./resources/index.html').on('change', browserSync.reload);
+    gulp.watch('./resources/js/*.js').on('change', browserSync.reload);
+}
 
 gulp.task('party', gulp.series('babel', 'imgMin', 'minify', 'minify-css', 'compress'));
 

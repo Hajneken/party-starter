@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="84002073-906d-40fd-8432-3c60fe154f75" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,7 +80,10 @@
       <option name="presentableId" value="Default" />
       <updated>1564429050012</updated>
       <workItem from="1564429052315" duration="3911000" />
-      <workItem from="1564475152728" duration="9158000" />
+      <workItem from="1564475152728" duration="11172000" />
+      <workItem from="1564557268409" duration="2421000" />
+      <workItem from="1564732440144" duration="100000" />
+      <workItem from="1564738747058" duration="23000" />
     </task>
     <servers />
   </component>
@@ -91,7 +95,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
