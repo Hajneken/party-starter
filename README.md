@@ -1,12 +1,6 @@
-# Project Portfolio
-
-Source code of project portfolio.
-
----
-
 # Party Starter 🎈🎉
 
-Your new favourite boilerplate for kicking off a new project without any hustle. 
+> Your new favourite boilerplate for kicking off a new project without any hustle. 
 
 Feel free to jumpstart your project using this template 🙌
 
